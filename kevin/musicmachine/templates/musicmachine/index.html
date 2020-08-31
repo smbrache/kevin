@@ -1,0 +1,19 @@
+{% extends "musicmachine/base_generic.html" %}
+
+{% block content %}
+  {% load static %}
+  <img src="{% static 'images/kevinlogo.png' %}" alt="logo" style="width:1055px;height:140px;">
+  <h1>Meet Kevin, he makes R2D2 look like a fucking simp.</h1>
+  <p>Kevin enjoys long walks on the beach, and absolutely dominating the sheets. <em>Don't look him in the eyes</em>!</p>
+  <h2>The Numbers</h2>
+  <p>Kevin has the following record counts:</p>
+  <ul>
+    <li><strong>Necks snapped:</strong> {{ num_songs }}</li>
+    <li><strong>Cheques cashed:</strong> {{ num_songs_tempo120 }}</li>
+    <li><strong>Sucka MCs sonned:</strong> {{ 6 }}</li>
+    <li><strong>Number of fingers on each hand:</strong> {{ 3 }}</li>
+    <li><strong>Number of toes on your dad:</strong> {{ 10 }}</li>
+    <li><strong>Number of fricks given:</strong> {{ 1 }}</li>
+  </ul>
+  <p>You have visited this page {{ num_visits }}{% if num_visits == 1 %} time{% else %} times{% endif %}.</p>
+{% endblock %}
